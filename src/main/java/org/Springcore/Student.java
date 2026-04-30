@@ -39,6 +39,10 @@ public class Student {
     public void setAddress(String address) {
         Address = address;
     }
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + Studentid + ", name='" + StudentName + '\'' + ", address='" + Address + '\'' + '}';
+    }
 }
 
 
