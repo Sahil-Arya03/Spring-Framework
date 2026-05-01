@@ -21,4 +21,17 @@
 
     </bean>
 
+    <bean id="Student2" class="org.Springcore.Student">
+
+        <property name="studentid" value="123434"/>
+        <property name="studentName" value="Aman"/>
+        <property name="address" value="Noida"/>
+
+    </bean>
+    <bean id="Student3" class="org.Springcore.Student"
+    p:studentid="123435"
+    p:studentName="Aarit"
+    p:address="Cuttack"
+    />
+
 </beans>
