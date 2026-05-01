@@ -13,6 +13,8 @@
            http://www.springframework.org/schema/context
            https://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- Student bean configuration using value  -->
+
     <bean id="Student" class="org.Springcore.Student">
 
         <property name="studentid" value="123412"/>
@@ -20,7 +22,7 @@
         <property name="address" value="Delhi"/>
 
     </bean>
-
+    <!-- Student bean configuration using value  -->
     <bean id="Student2" class="org.Springcore.Student">
 
         <property name="studentid" value="123434"/>
@@ -28,6 +30,7 @@
         <property name="address" value="Noida"/>
 
     </bean>
+    <!-- Student bean configuration using p schema (most efficient) -->
     <bean id="Student3" class="org.Springcore.Student"
     p:studentid="123435"
     p:studentName="Aarit"
