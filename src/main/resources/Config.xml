@@ -22,7 +22,7 @@
         <property name="address" value="Delhi"/>
 
     </bean>
-    <!-- Student bean configuration using value  -->
+    <!-- Student bean configuration using property  -->
     <bean id="Student2" class="org.Springcore.Student">
 
         <property name="studentid" value="123434"/>
