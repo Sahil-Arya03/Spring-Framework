@@ -3,6 +3,9 @@ package org.lifecycle;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 public class Cars implements InitializingBean, DisposableBean {
     private String carName;
     private double price;
@@ -28,15 +31,14 @@ public class Cars implements InitializingBean, DisposableBean {
     public String toString() {
         return "Cars{" + "carName='" + carName + '\'' + ", price=" + price + '}';
     }
-
-    public void destroy() throws Exception
+@PreDestroy
+    public void destroy()
     {
         // destroy
         System.out.println("Cars destroy");
     }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
+@PostConstruct
+    public void afterPropertiesSet()  {
         // init
         System.out.println("Cars init");
 
