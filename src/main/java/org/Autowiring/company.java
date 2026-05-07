@@ -1,10 +1,12 @@
 package org.Autowiring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class company {
     private int empID;
     @Autowired
+    @Qualifier("emp34") //WE CAN ADD QUALIFIER TO SPECIFY THE OBJECT
     private emp emp;
 
     //constructor
